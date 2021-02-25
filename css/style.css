@@ -14,6 +14,21 @@
     margin-right: auto;
 }
 
+#searchBar {
+    text-align: center;
+}
+
+#gSearch {
+    width: 50%;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#gSearch:focus {
+    outline: none;
+}
 
 #signIn{
     background-color: #1a73e8;
@@ -27,11 +42,13 @@
 
 #signIn:hover{
     cursor: pointer;
+    text-decoration: none;
 }
 
 .topNavRight a, .topNavLeft a{
     text-decoration: none;
     color: black;
+    font-size: 10px;
 }
 
 .topNavRight a:hover, .topNavLeft a:hover{
