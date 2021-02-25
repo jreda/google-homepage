@@ -1,0 +1,53 @@
+#logo {
+    /*need to center align*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20vh;
+    width: 50%;
+}
+
+#google {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#signIn{
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#signIn:hover{
+    cursor: pointer;
+}
+
+.topNavRight a, .topNavLeft a{
+    text-decoration: none;
+    color: black;
+}
+
+.topNavRight a:hover, .topNavLeft a:hover{
+    text-decoration: underline 1px black;
+    color: black;
+
+}
+
+.topNavRight {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.topNavLeft {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
