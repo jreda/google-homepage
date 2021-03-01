@@ -1,43 +1,20 @@
-#logo {
-    /*need to center align*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20vh;
-    width: 50%;
+* {
+    box-sizing: border-box;
 }
 
-#google {
-    height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#container {
+    display: grid;
 }
 
-#searchBar {
-    text-align: center;
-}
-
-#gSearch {
-    width: 50%;
-    margin-top: 30px;
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#gSearch:focus {
-    outline: none;
-}
-
+/*Styling for the header/top nav bar*/
 #signIn{
     background-color: #1a73e8;
     color: white;
     border-radius: 4px;
     outline: none;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #signIn:hover{
@@ -54,7 +31,6 @@
 .topNavRight a:hover, .topNavLeft a:hover{
     text-decoration: underline 1px black;
     color: black;
-
 }
 
 .topNavRight {
@@ -68,3 +44,113 @@
     margin-top: 20px;
     margin-left: 20px;
 }
+
+/*styling for the logo and search bar/box*/
+#google {
+    margin-top: 17.5vh;
+    margin-left: 0;
+    margin-right: 0;
+    height: 80px;
+}
+
+#logo {
+    text-align: center;
+}
+
+#searchBar {
+    text-align: center;
+}
+
+#gSearch {
+    width: 50%;
+    max-width: 475px;
+    min-width: 350px;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 1px;
+    border-color: rgb(206, 206, 206);
+    background-color: white;
+    height: 35px;
+}
+
+#gSearch:focus {
+    outline: none;
+}
+
+#ifl, #search {
+    margin-top: 10px;
+}
+
+
+/*styling for the bottom navigation, controls how the flow when collapsing on itself*/
+.bottomNav {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	background-color: rgb(243, 239, 239);
+	width: 100%;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  }
+  
+  .bottomNav a {
+	color: gray;
+	text-decoration: none;
+  }
+  
+  .bottomNav a:hover {
+	text-decoration: underline 1px grey;
+  }
+  
+  @media (max-width: 1000px) {
+	.bottomNav {
+	  justify-content: space-evenly;
+	}
+  
+	#bNLeft {
+	  order: 2;
+	}
+  
+	#bNMiddle {
+	  width: 100%;
+	  text-align: center;
+	  order: 1;
+	  padding-bottom: 30px;
+	}
+  
+	#bNRight {
+	  order: 2;
+	}
+  }
+  
+  @media (max-width: 500px) {
+	.bottomNav {
+	  justify-content: space-evenly;
+	}
+  
+	#bNLeft {
+	  order: 2;
+	  padding-bottom: 30px;
+	  width: 100%;
+	  text-align: center;
+	}
+  
+	#bNMiddle {
+	  width: 100%;
+	  text-align: center;
+	  order: 1;
+	  padding-bottom: 30px;
+	}
+  
+	#bNRight {
+	  order: 3;
+	  width: 100%;
+	  text-align: center;
+	}
+  }
